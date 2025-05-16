@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cuide da Sua Horta</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: #f0fff0; line-height: 1.6; }
+    header, footer {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    nav {
+      background-color: #388E3C;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 5px 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main { padding: 20px; }
+    section { margin-bottom: 30px; }
+    h2 { color: #2E7D32; margin-bottom: 10px; }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 10px 0;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    input, textarea, button {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45A049;
+    }
+    @media (max-width: 600px) {
+      nav { flex-direction: column; }
+      nav a { margin: 8px 0; font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Como Cuidar da Sua Horta 🌿</h1>
+    <p>Dicas práticas para cultivar em casa</p>
+  </header>
+
+  <nav>
+    <a href="#preparo">Preparo</a>
+    <a href="#plantio">Plantio</a>
+    <a href="#cuidados">Cuidados</a>
+    <a href="#dicas">Extras</a>
+    <a href="#contato">Contato</a>
+    <a href="plantas-faceis.html">Plantas Fáceis</a>
+  </nav>
+
+  <main>
+    <section id="preparo">
+      <h2>Preparo do Solo</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Horta_caseira.jpg" alt="Horta sendo preparada" />
+      <p>Escolha um local com sol, mexa bem a terra e adicione adubo orgânico.</p>
+    </section>
+
+    <section id="plantio">
+      <h2>Plantio</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Plantio_de_alface.jpg/800px-Plantio_de_alface.jpg" alt="Plantando alface" />
+      <p>Plante com espaçamento adequado. Algumas sementes precisam de pouca terra por cima, outras de mais.</p>
+    </section>
+
+    <section id="cuidados">
+      <h2>Cuidados Diários</h2>
+      <ul>
+        <li>Regue pela manhã ou fim da tarde.</li>
+        <li>Não encharque o solo.</li>
+        <li>Use soluções naturais contra pragas.</li>
+      </ul>
+    </section>
+
+    <section id="dicas">
+      <h2>Dicas Extras</h2>
+      <p>Use cascas de legumes, borra de café e plante hortelã para afastar insetos. 🌼</p>
+    </section>
+
+    <section id="contato">
+      <h2>Fale com a gente</h2>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>🌱 Site criado com carinho para quem ama cultivar.</p>
+  </footer>
+
+</body>
+</html>
